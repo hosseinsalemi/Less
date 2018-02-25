@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
 /*
 Theme Name: Less
 Theme URI: http://lessmade.com/themes/less
@@ -11,6 +10,7 @@ License: GNU General Public License
 */
 /* LESS variables - Change the look of your site simply.
 -------------------------------------------------------------- */
+@import url(https://cdn.rawgit.com/rastikerdar/vazir-font/v18.0.0/dist/font-face.css);
 /* Reset
 -------------------------------------------------------------- */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -124,13 +124,10 @@ html {
   padding: 0;
   font-size: 62.5%;
   /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
-
   -webkit-text-size-adjust: 100%;
   /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
-
   -ms-text-size-adjust: 100%;
   /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
-
 }
 ol,
 ul {
@@ -155,7 +152,7 @@ code,
 kbd,
 tt,
 var {
-  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font: 15px "Vazir", Tahoma;
 }
 abbr,
 acronym {
@@ -203,23 +200,19 @@ select,
 textarea {
   font-size: 100%;
   /* Corrects font size not being inherited in all browsers */
-
   margin: 0;
   /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
-
   vertical-align: baseline;
+  /* Improves appearance and consistency in all browsers */
   *vertical-align: middle;
   /* Improves appearance and consistency in all browsers */
-
 }
 button,
 input {
   line-height: normal;
   /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
-
   *overflow: visible;
   /* Corrects inner spacing displayed oddly in IE6/7 */
-
 }
 button,
 html input[type="button"],
@@ -235,10 +228,8 @@ input[type="submit"] {
   color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   /* Improves usability and consistency of cursor style between image-type 'input' and others */
-
   -webkit-appearance: button;
   /* Corrects inability to style clickable 'input' types in iOS */
-
   font-size: 12px;
   font-size: 1.4rem;
   line-height: 1;
@@ -271,30 +262,24 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* Addresses box sizing set to content-box in IE8/9 */
-
   padding: 0;
   /* Addresses excess padding in IE8/9 */
-
 }
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
-
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
-
   box-sizing: content-box;
 }
 input[type="search"]::-webkit-search-decoration {
   /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
-
   -webkit-appearance: none;
 }
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
-
   border: 0;
   padding: 0;
 }
@@ -317,11 +302,9 @@ input[type=email] {
 textarea {
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
-
   padding: 10px;
   vertical-align: top;
   /* Improves readability and alignment in all browsers */
-
   width: 98%;
 }
 /* styles
@@ -332,8 +315,8 @@ input,
 select {
   padding: 0;
   margin: 0;
-  background: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #fff;
+  font-family: "Vazir", Tahoma;
   line-height: 26.64px;
   font-size: 18px;
   font-size: 1.8rem;
@@ -348,10 +331,10 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: "Arvo", Georgia, serif;
+  font-family: "Vazir", Tahoma;
 }
 h1 {
-  line-height: 71.03999999999999px;
+  line-height: 71.04px;
   font-size: 48px;
   font-size: 4.8rem;
 }
@@ -421,7 +404,7 @@ address {
 }
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "Vazir", Tahoma;
   font-size: 15px;
   font-size: 1.5rem;
   line-height: 1.6;
@@ -476,15 +459,15 @@ header .gravatar {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   margin: 0;
-  float: right;
+  float: left;
 }
 header #brand {
-  float: left;
+  float: right;
   width: 80%;
   margin-top: 22px;
 }
 header #brand h1 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Vazir", Tahoma;
   font-weight: 900;
   color: #565656;
   line-height: 23.68px;
@@ -504,15 +487,15 @@ header #brand h1 span {
   text-transform: lowercase;
 }
 header nav {
-  float: left;
+  float: right;
 }
 header nav ul {
   list-style: none;
   margin: 0;
 }
 header nav ul li {
-  float: left;
-  margin: 2px 10px 0 0;
+  float: right;
+  margin: 2px 0 0 10px;
 }
 header nav ul li a {
   color: #888888;
@@ -576,7 +559,7 @@ article .meta {
   letter-spacing: .9px;
 }
 article .meta div {
-  float: left;
+  float: right;
 }
 article .meta .post-categories {
   list-style: none;
@@ -584,7 +567,7 @@ article .meta .post-categories {
 }
 article .meta .post-categories li {
   display: inline-block;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 /* Page loop styling */
 .page article {
@@ -599,10 +582,10 @@ article .meta .post-categories li {
   width: 100%;
 }
 #pagination .past-page {
-  float: right;
+  float: left;
 }
 #pagination .next-page {
-  float: left;
+  float: right;
 }
 /* Comments */
 h3#comments {
@@ -627,7 +610,7 @@ h3#comments {
 }
 .commentlist .comment-author {
   float: left;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .commentlist .comment-author img {
   position: absolute;
@@ -663,7 +646,8 @@ footer {
 }
 /* Misc & mixens
 -------------------------------------------------------------- */
-/* Jetpack Gallery */.gallery .gallery-item {
+/* Jetpack Gallery */
+.gallery .gallery-item {
   margin-top: 0 !important;
 }
 .gallery img {
