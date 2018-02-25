@@ -220,9 +220,10 @@
 <footer class="site-footer" role="contentinfo">
 	<div class="site-info container">
 		<?php do_action( 'break_credits' ); ?>
-		<a href="http://wordpress.org/" title="A Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
-		<span class="sep"> and </span>
-		<a href="http://lessmade.com/themes/less" rel="theme">LESS</a> by <a href="http://jarederickson.com" rel="designer">Jared Erickson</a>
+		<span>با افتخار نیرو گرفته از</span>
+		<a href="http://wordpress.org/" title="A Semantic Personal Publishing Platform" rel="generator">WordPress</a>
+		<span class="sep"> و </span>
+		<a href="https://github.com/hosseinsalemi/Less" rel="theme">LESS</a>
 	</div><!-- .site-info -->
 </footer><!-- #colophon .site-footer -->
 
